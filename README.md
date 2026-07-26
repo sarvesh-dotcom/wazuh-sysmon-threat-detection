@@ -92,6 +92,8 @@ This repository includes:
 - `ossec.conf` (modified Wazuh Agent configuration)
 - `sysmonconfig.xml` (Sysmon configuration used for the lab)
 
+Note: The configuration files included in this repository have been sanitized for security and privacy. Sensitive information such as IP addresses, hostnames, authentication details, and environment-specific settings has been replaced with placeholders while preserving the relevant configuration used for this lab.
+
 ---
 
 ## Skills Demonstrated
