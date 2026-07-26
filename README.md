@@ -85,32 +85,6 @@ wazuh-sysmon-threat-detection/
 
 ---
 
-## Screenshots
-
-### Wazuh Dashboard
-
-*Add screenshot here*
-
----
-
-### Process Creation Detection
-
-*Add screenshot here*
-
----
-
-### PowerShell Detection
-
-*Add screenshot here*
-
----
-
-### User Enumeration Detection
-
-*Add screenshot here*
-
----
-
 ## Configuration
 
 This repository includes:
