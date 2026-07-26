@@ -1,0 +1,47 @@
+<ossec_config>
+
+  <client>
+    <server>
+      <address>WAZUH_MANAGER_IP</address>
+      <port>1514</port>
+      <protocol>tcp</protocol>
+    </server>
+
+    <config-profile>windows, windows11</config-profile>
+    <crypto_method>aes</crypto_method>
+  </client>
+
+  <!-- Windows Event Logs -->
+  <localfile>
+    <location>Application</location>
+    <log_format>eventchannel</log_format>
+  </localfile>
+
+  <localfile>
+    <location>Security</location>
+    <log_format>eventchannel</log_format>
+  </localfile>
+
+  <localfile>
+    <location>System</location>
+    <log_format>eventchannel</log_format>
+  </localfile>
+
+  <!-- Sysmon -->
+  <localfile>
+    <location>Microsoft-Windows-Sysmon/Operational</location>
+    <log_format>eventchannel</log_format>
+  </localfile>
+
+  <!-- File Integrity Monitoring -->
+  <syscheck>
+    <disabled>no</disabled>
+
+    <directories realtime="yes">
+      C:\Users\<USERNAME>\Desktop\Test
+    </directories>
+
+    <frequency>43200</frequency>
+  </syscheck>
+
+</ossec_config>
